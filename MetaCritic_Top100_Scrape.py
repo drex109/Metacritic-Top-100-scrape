@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 
 def getTopOneHundred():
     
-    userInput = input('Would you like top 100 of all time or by year?: ')
+    userInput = input('Would you like the top 100 of all time or by year?: ')
     if userInput.lower() == 'year' or userInput.lower() == 'by year':
         yearInput = input('What year?: ')
         url = 'https://www.metacritic.com/browse/games/score/metascore/year/all/filtered?year_selected='+yearInput+'&distribution=&sort=desc&view=detailed'
